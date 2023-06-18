@@ -44,6 +44,16 @@ serving on a single port (default 8080) of a Raspberry Pi.
 Here is the original circuit diagram from the [manual](https://www.ranciliogroupna.com/filebin/images/Downloadables/User_Manuals/Homeline/Silvia_User_Manual_2017.PDF):
 ![unmodified](images/circuit_diagram_original.png)
 Rewire it like this (default gpio pin numbers shown):
+
+※I changed the pin from original espresso-controller.
+This version is custmized espresso-controller.
+| DO |  | GPIO2 | 3 |  →→→→→ GPIO9 |
+| CS |  | GPIO3 | 5 |  →→→→→ GPIO5 |
+| CLK|  | GPIO4 | 7 |  →→→→→ GPIO11 |
+|SSR+|  | GPIO21| 40|  |
+|SSR-|  | GND |  |  |
+
+↓Original espresso-controller
 ![modified](images/circuit_diagram_modified.png)
 
 #### Note on Thermocouple Placement
